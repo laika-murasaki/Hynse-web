@@ -13,6 +13,8 @@ Subserver/Server1/eula.txt
 Subserver/Server1/libraries
 *.gz
 *.jar
+*.log
+*.logs
 Subserver/Server1/plugins/bStats
 Subserver/Server1/plugins/spark
 Subserver/Server1/usercache.json
