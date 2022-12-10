@@ -19,8 +19,9 @@ exempt-permission: false
 
 # A list of worlds in which broadcasts will not be sent to the players.
 disabled-worlds:
-  - disabled-world
-  - disabled-world2
+  - world
+  - world_nether
+  - world_the_end
 
 # A list of players that will not see the broadcasts.
 exempted-players:
@@ -28,10 +29,10 @@ exempted-players:
   - exempted-player2
 
 # The message displayed when the command provided is invalid.
-unknown-command: "&c&l[!] &cUnknown Command."
+unknown-command: "&x&9&e&6&4&c&9⚠ &x&b&7&7&a&e&4&lHynse&r &7|&r &x&e&e&4&5&6&3Unknown Command."
 
 # The message displayed when the sender of the command does not have the permission to execute the command.
-no-permission: "&c&l[!] &cYou do not have enough permission to do this."
+no-permission: "&x&9&e&6&4&c&9⚠ &x&b&7&7&a&e&4&lHynse&r &7|&r &x&e&e&4&5&6&3You do not have enough permission to do this."
 
 # The message displayed when the configuration of the plugin is reloaded.
-plugin-reload: "&3&lAuto&b&lmatic&8&lBroad&7&lcast &7&l>> &bPlugin Reloaded."
+plugin-reload: "&x&9&e&6&4&c&9⚠ &x&b&7&7&a&e&4&lHynse&r &7|&r &x&5&0&e&b&7&9Plugin Reloaded."
