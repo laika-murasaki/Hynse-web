@@ -106,6 +106,9 @@ filters:
       - "vt"
       - "vtag"
       - "zoomify"
+      - "ab"
+      - "auto(broadcast)?(maticbroadcast)?"
+      - "voicechat"
 
 # No touchy
 config version: 4.0
