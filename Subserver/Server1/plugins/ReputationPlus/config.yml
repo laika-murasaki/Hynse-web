@@ -1,0 +1,205 @@
+sql-connection:
+  host: 'localhost'
+  port: '3303'
+  user: 'laika'
+  password: '0930376610xX!'
+  database: 'reputationplus'
+options:
+  #                                     | PLACEHOLDERS |
+  # Player placeholders: %rep_player% - display name of the player that have executed the command
+  #                      %rep_player_reputation% - reputation of the player
+  #                      %rep_player_votes% - how many votes has the player given to another players
+  #
+  # Target placeholders: same ones, just replace player with target in each placeholder
+  #
+  # Time placeholders: %rep_time_until% - time until player is able to rate again
+  #                    %rep_time_ago% - when did a player rate target from now
+  #
+  # Other placeholders | works only on locations they are on and do not support PlaceholderAPI:
+  #                                                           %rep_reason% - reason for voting
+  #                                                           %rep_decision% - returns either +rep or -rep
+  #
+  # From update 3.1 you can use multiple placeholders in one message such as:
+  #                           %rep_target% was rated by &rep_player&! Now %rep_target% has %rep_target_reputation&!
+  # Perfect scenario for this plugin would be just translating the messages or changing the colors
+
+
+  # limit of how many votes can one player give to another one no matter if he chose +rep or -rep
+  # example:
+  #   player1 rates player2 'maxVotes' times and cannot vote for him anymore, but he can vote for other players
+  maxVotes: 10
+  # sends player this message if the player has reached maximum votes set by maxVotes
+  maxVotes-message: '&x&e&e&4&5&6&3คุณถึงจำนวนคะแนนสูงสุด &6%rep_target%&c!'
+
+  # set to false if you want to disable prefix in front of every message
+  use-prefix: true
+  prefix: '&x&9&e&6&4&c&9⚠ &x&b&7&7&a&e&4&lHynse&r&x&8&f&6&9&a&b |&r'
+
+  # set to true if you want to let players vote for themselves
+  can-self-vote: true
+  # this message will display if can-self-vote is false
+  no-self-vote-message: "&x&e&e&4&5&6&3คุณไม่สามารถให้คะแนนตัวเองได้"
+
+  rep-command:
+    # use prefix in front of each message in rep-command-message
+    use-prefix: true
+    # messages that will be sent to the player by '/rep' command
+    messages:
+      - '&x&b&4&6&8&d&0REP » &x&c&6&9&f&d&5%rep_player_reputation%'
+      #- '&x&c&6&9&f&d&5โหวตของคุณ: &x&b&4&6&8&d&0%rep_player_votes%'
+
+  reptop-command:
+    # maximum number of players shown
+    limit: 5
+    # message if there are no players in the database thus no one can be shown
+    no-players-found: '&x&e&e&4&5&6&3ไม่พบผู้เล่น!'
+    # you can use {position}, {name} and {reputation} placeholders in this message
+    format:
+      - "&x&b&7&7&a&e&4 ⭐ ผู้เล่นอันดับต้น ๆ:"
+      # please use message below always as the last one
+      - "&x&c&6&9&f&d&5{position}: &x&b&3&5&6&8&f{name} &x&c&6&9&f&d&5- &x&b&3&5&6&8&f{reputation}"
+
+  # interval in which are players allowed to rate another player
+  interval-options:
+    # if you want to manage command interval by different plugin, you can disable this interval
+    enabled: false
+    # valid options: s (seconds), m (minutes), h (hours), d (days)
+    # do not use something like 1d5h rather use 29h
+    interval: '1d'
+    # this message will display if player is not allowed to rate another player yet
+    message: '&x&e&e&4&5&6&3คุณต้องรอ &x&e&0&7&3&b&6%rep_time_until%&x&e&e&4&5&6&3 ก่อนที่คุณจะให้คะแนนอีกครั้ง!'
+
+  gui-options:
+    # ONLY TARGET PLACEHOLDERS ARE VIABLE || DO NOT USE PLAYER PLACEHOLDERS
+    # the way this plugin is coded allows GUI to gather only target placeholders!!
+
+    # sets the title of GUI after /rep <player>
+    title: '&x&b&3&5&6&8&fRep ของ &x&c&6&9&f&d&5%rep_target%'
+
+    # this option changes the look of rep GUI. Shows 7 latest voters and their ratings on the target
+    show-latest-voters:
+      enabled: true
+      # this is a sign that shows under a target player head in GUI. You can set it's title here
+      sign-title: '&x&b&3&5&6&8&fโหวตล่าสุด &x&c&6&9&f&d&5%rep_target%'
+      # how you would want latest voters head to look
+      voter-head:
+        # rep_decision will handle color depending on whenever target has been voted +rep (green) or -rep (red)
+        title: '&6%rep_player% &7ได้รับการโหวต %rep_decision%'
+        description:
+          - '&x&b&3&5&6&8&fเหตุผล: &e%rep_reason%'
+          - '&x&b&3&5&6&8&fเมื่อ: &e%rep_time_ago%'
+
+    target-head:
+      # color of the name of the target in GUI
+      name-color: '&x&e&2&9&c&c&7'
+      # sets lore of the head
+      description:
+        - '&x&b&3&5&6&8&fREP » &x&c&6&9&f&d&5%rep_target_reputation%'
+        - '&x&b&3&5&6&8&fโหวต » &x&c&6&9&f&d&5%rep_target_votes%'
+      # - null // you can use null if you don't want description
+
+    # set options for +rep button
+    +rep-button:
+      block: LIME_CONCRETE
+      title: '&x&5&0&e&b&7&9+REP'
+      description:
+        - '&x&c&6&9&f&d&5คลิกเพื่อ &x&5&0&e&b&7&9เพิ่ม &x&c&6&9&f&d&51 REP ให้ &x&e&2&9&c&c&7%rep_target%'
+
+    # set options for -rep button
+    -rep-button:
+      block: RED_CONCRETE
+      title: '&c-REP'
+      description:
+        - '&x&c&6&9&f&d&5คลิกเพื่อ &x&e&e&4&5&6&3ลบ &x&c&6&9&f&d&51 REP จาก &x&e&2&9&c&c&7%rep_target%'
+    # set options for remaining slots of GUI, use null for empty slots
+    filler:
+      block: LIGHT_GRAY_STAINED_GLASS_PANE
+
+    reason-gui-options:
+      # title of +rep reason gui. Please to not make these titles equal
+      positive-title: '&x&5&0&e&b&7&9เลือกเหตุผลเชิงบวก'
+      negative-title: '&x&e&e&4&5&6&3เลือกเหตุผลเชิงลบ'
+
+      # reasons when a player selects +rep
+      +rep-reasons:
+        help:
+          name: '&x&5&0&e&b&7&9ช่วยฉัน'
+          # you can look for every material name here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          material: DIAMOND
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% ช่วยฉันออกไปจริงๆ!'
+
+        gave:
+          name: '&x&5&0&e&b&7&9ให้ไอเท็มฉัน'
+          material: GOLD_INGOT
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% ให้ไอเท็ม!'
+
+        kind:
+          name: '&x&5&0&e&b&7&9ใจดีกับฉัน'
+          material: BOOK
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% ใจดีมากสำหรับฉัน!'
+
+        kindcommunity:
+          name: '&x&5&0&e&b&7&9ช่วยเหลือชุมชน'
+          material: BOOK
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% ช่วยเหลือชุมชน!'
+        # you can add custom reasons here, please keep max reasons to 7
+        # anything:
+        #   name: '&aGive me a name!'
+        #   material: DIAMOND_HOE
+        #   description:
+        #     - '&8%rep_target% is super nice!'
+
+      -rep-reasons:
+        grief:
+          name: '&x&e&e&4&5&6&3เกรียน'
+          material: DIAMOND_PICKAXE
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% เกรียน'
+        kill:
+          name: '&x&e&e&4&5&6&3RDM'
+          material: DIAMOND_SWORD
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% ฆ่าโดยไม่มีเหตุผล!'
+        scam:
+          name: '&x&e&e&4&5&6&3ต้มตุ๋น'
+          material: ENDER_EYE
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% หลอกลวงฉัน!'
+        steal:
+          name: '&x&e&e&4&5&6&3ขโมย'
+          material: ENDER_EYE
+          description:
+            - '&x&e&2&9&c&c&7%rep_target% ขโมยไอเท็มของฉัน!'
+      # entry with 'custom-reason' will always be displayed at the end of the GUI. You cannot remove this
+      custom-reason:
+        title: ' '
+        material: LIGHT_GRAY_STAINED_GLASS_PANE
+        description:
+          - ' '
+
+messages:
+  # sends player this message if he upvoted another player. Message has hover effect
+  +rep-message: "&x&c&6&9&f&d&5คุณโหวตให้ &x&b&3&5&6&8&f%rep_target%&a!"
+  # sets hover message, type null to disable
+  +rep-hover-message: "&x&b&3&5&6&8&f%rep_target%&a Rep ของคุณ &x&b&3&5&6&8&f%rep_target_reputation%"
+
+  # sends player this message if he downvoted another player. Message has hover effect
+  -rep-message: "&x&c&6&9&f&d&5คุณได้รับการโหวต Rep ในเชิงลบจาก &x&b&3&5&6&8&f%rep_target%&a!"
+  -rep-hover-message: "&x&b&3&5&6&8&f%rep_target%&a Rep ของคุณ &x&b&3&5&6&8&f%rep_target_reputation%"
+
+  # after receiving positive vote from a player, the target will be notified with this message (if he is online). Message has hover effect
+  +rep-message-target: "&x&c&6&9&f&d&5คุณได้รับการโหวต Rep ในเชิงบวกจาก &x&b&3&5&6&8&f%rep_player%!"
+  +rep-hover-message-target: "&aRep ของคุณคือตอนนี้ &x&b&3&5&6&8&f%rep_target_reputation%"
+
+  # sends player this message if the player wanted to rate a player that haven't joined the server once
+  player-never-seen: "&x&e&e&4&5&6&3ผู้เล่น &x&e&0&7&3&b&6%rep_target% &x&e&e&4&5&6&3ไม่เคยเล่นบนเซิร์ฟเวอร์นี้มาก่อน!"
+
+  # sends player this message if the player does not have permission to use certain command
+  no-permission: "&x&e&e&4&5&6&3คุณไม่ได้รับอนุญาตให้ใช้คำสั่งนี้!"
+
+  # sends player this message if the player reloads the config
+  config-reload: "&x&c&6&9&f&d&5การกำหนดค่าได้รับการโหลดซ้ำแล้ว!"

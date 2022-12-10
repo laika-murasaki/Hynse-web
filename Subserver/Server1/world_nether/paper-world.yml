@@ -1,0 +1,35 @@
+# This is a world configuration file for Paper.
+# This file may start empty but can be filled with settings to override ones in the config/paper-world-defaults.yml
+# 
+# World: world_nether (minecraft:the_nether)
+
+_version: 29
+anticheat:
+  anti-xray:
+    hidden-blocks:
+    - ancient_debris
+    - bone_block
+    - glowstone
+    - magma_block
+    - nether_bricks
+    - nether_gold_ore
+    - nether_quartz_ore
+    - polished_blackstone_bricks
+    max-block-height: 128
+    replacement-blocks:
+    - basalt
+    - blackstone
+    - gravel
+    - netherrack
+    - soul_sand
+    - soul_soil
+entities:
+  spawning:
+    spawn-limits:
+      ambient: -1
+      axolotls: -1
+      creature: -1
+      monster: 24
+      underground_water_creature: -1
+      water_ambient: -1
+      water_creature: -1
