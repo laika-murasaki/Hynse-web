@@ -51,3 +51,5 @@ Subserver/Server1/config/paper-global.yml
 *.log
 Proxy/plugins/luckperms
 Subserver/Server1/plugins/LuckPerms
+Subserver/Server1/plugins/ProtocolLib
+Subserver/Server1/plugins/titleManager/playerinfo.sqlite
