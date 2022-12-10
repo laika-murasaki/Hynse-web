@@ -21,7 +21,7 @@ settings:
   sample-count: 12
   player-shuffle: 0
   user-cache-size: 1000
-  bungeecord: true
+  bungeecord: false
   netty-threads: 4
   log-villager-deaths: true
   log-named-deaths: true
