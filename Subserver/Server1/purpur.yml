@@ -32,8 +32,8 @@ settings:
       stonecutter: <player> has sawed themself in half
   fix-projectile-looting-transfer: false
   disable-give-dropping: false
-  use-alternate-keepalive: false
-  server-mod-name: Purpur
+  use-alternate-keepalive: true
+  server-mod-name: Hynse
   tps-catchup: true
   seed:
     structure:
@@ -320,7 +320,7 @@ world-settings:
         random-tick-crack-chance: 500
         feather-fall-distance-affects-trampling: false
       sand:
-        fix-duping: true
+        fix-duping: false
       shulker_box:
         allow-oversized-stacks: false
       spawner:
@@ -463,7 +463,7 @@ world-settings:
         controllable: true
         attributes:
           max_health: 8.0
-        default-collar-color: RED
+        default-collar-color: light_purple
         milk-cures-rabid-wolves: true
         spawn-rabid-chance: 0.0
         breeding-delay-ticks: 6000
@@ -517,7 +517,7 @@ world-settings:
           swamp-hut: 16
           village: 48
         breeding-delay-ticks: 6000
-        default-collar-color: RED
+        default-collar-color: light_purple
         takes-damage-from-water: false
         always-drop-exp: false
       chicken:
@@ -645,7 +645,7 @@ world-settings:
         controllable: true
         attributes:
           max_health: 40.0
-        allow-griefing: true
+        allow-griefing: false
         can-despawn-with-held-block: false
         bypass-mob-griefing: false
         takes-damage-from-water: true
