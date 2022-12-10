@@ -96,7 +96,7 @@ proxies:
   velocity:
     enabled: false
     online-mode: false
-    secret: ''
+    secret: "forwarding.secret"
 scoreboards:
   save-empty-scoreboard-teams: false
   track-plugin-scoreboards: false
