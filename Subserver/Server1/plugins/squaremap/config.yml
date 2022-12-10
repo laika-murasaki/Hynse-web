@@ -1,7 +1,7 @@
 config-version: 2
 settings:
     web-directory:
-        path: web
+        path: D:\Light-Minecraft\site\sqmap
         auto-update: true
     language-file: lang-en.yml
     debug-mode: false
@@ -18,13 +18,13 @@ settings:
         enabled: true
         interval-seconds: 1
     internal-webserver:
-        enabled: true
+        enabled: false
         bind: 0.0.0.0
         port: 8080
     image-quality:
         compress-images:
             enabled: false
-            value: 0.0
+            value: 6.0
     commands:
         main-command-label: squaremap
         main-command-aliases:
