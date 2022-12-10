@@ -27,7 +27,7 @@ options:
   # limit of how many votes can one player give to another one no matter if he chose +rep or -rep
   # example:
   #   player1 rates player2 'maxVotes' times and cannot vote for him anymore, but he can vote for other players
-  maxVotes: 10
+  maxVotes: 30
   # sends player this message if the player has reached maximum votes set by maxVotes
   maxVotes-message: '&x&e&e&4&5&6&3คุณถึงจำนวนคะแนนสูงสุด &6%rep_target%&c!'
 
@@ -50,7 +50,7 @@ options:
 
   reptop-command:
     # maximum number of players shown
-    limit: 5
+    limit: 10
     # message if there are no players in the database thus no one can be shown
     no-players-found: '&x&e&e&4&5&6&3ไม่พบผู้เล่น!'
     # you can use {position}, {name} and {reputation} placeholders in this message
@@ -62,7 +62,7 @@ options:
   # interval in which are players allowed to rate another player
   interval-options:
     # if you want to manage command interval by different plugin, you can disable this interval
-    enabled: false
+    enabled: true
     # valid options: s (seconds), m (minutes), h (hours), d (days)
     # do not use something like 1d5h rather use 29h
     interval: '1d'
