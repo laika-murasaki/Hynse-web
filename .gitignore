@@ -49,3 +49,5 @@ Subserver/Server1/logs
 Subserver/Server1/config/paper-global.yml
 **/*.log
 *.log
+Proxy/plugins/luckperms
+Subserver/Server1/plugins/LuckPerms
