@@ -7,7 +7,7 @@ version: 8
 
 # Set this to true to enable the plugin. The plugin is initially disabled so that you can make changes to the config
 # appropriate to your server.
-enabled: false
+enabled: true
 
 # How should we determine whether the simulation distance needs adjusting? Accepts three values:
 #  * proactive : Adjust the simulation distance so that the player-loaded chunk count is always below a set threshold.
@@ -104,7 +104,7 @@ world-settings:
       minimum-simulation-distance: 6
 
       # What should the absolute maximum simulation distance be in this world?
-      maximum-simulation-distance: 12
+      maximum-simulation-distance: 6
 
     # These settings concern the view distance of this world.
     view-distance:
@@ -114,7 +114,7 @@ world-settings:
       exclude: false
 
       # What should the absolute minimum view distance be in this world?
-      minimum-view-distance: 8
+      minimum-view-distance: 6
 
       # What should the absolute maximum view distance be in this world?
       maximum-view-distance: 16
