@@ -153,6 +153,8 @@ world-settings:
     wither-spawn-sound-radius: 0
     end-portal-sound-radius: 0
     verbose: false
+  worldeditregentempworld:
+    verbose: false
 commands:
   silent-commandblock-console: false
   spam-exclusions:
