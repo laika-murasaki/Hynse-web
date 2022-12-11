@@ -1,0 +1,108 @@
+#
+# The Configuration file of Death Chest
+#    In this file you can customize the plugin.
+#
+
+# Do not touch this!
+config-version: 2
+
+# I recommend leaving this on true to receive notification when I have performance improvements.
+update-checker: true
+duration-format: 'mm:ss'
+# The expiration of the chest in seconds.
+# You can deactivate the expiration by setting the value to -1
+expiration: 600
+
+# Here you can modify the inventory which opens when you right-click the death chest. You can use color codes with '&'
+# in the title and change the inventory size by changing the size value.
+inventory:
+  title: 'Death Chest'
+  # Possible values are: constant and flexible
+  # constant: the size of the inventory is always 45 slots large
+  # flexible: the size of the inventory depends on the items which had the player in the inventory.
+  size: flexible
+
+# This section is for handling the hologram function in this plugin. You can remove this section to disable the feature,
+# or you set the 'enabled' option to false
+# This feature is only available if you have a supported hologram plugin installed.
+hologram:
+  enabled: true
+  # If you add lines you have to increase this value. This values depends on the hologram
+  # plugin and the distance between the plugin
+  height: 2.3
+  # Support for {player_name}: Name
+  #             {player_displayname}: Displayname
+  #             {duration}: Time left
+  lines:
+    - '&7&lR.I.P'
+    - '${player_name}'
+    - '&3-&6-&3-&6-&3-&6-&3-'
+    - '${duration}'
+
+# This section is for handling the particle function in this plugin. You can remove this section to disable the feature,
+# or you set the 'enabled' option to false
+particle:
+  enabled: true
+  radius: 1.0
+  count: 32
+  # Maximum is 20
+  speed: 20.0
+
+# This section is for handling the block breaking function in this plugin. You can remove this section to disable the feature,
+# or you set the 'enabled' option to false
+# This feature is only available if you have ProtocolLib installed.
+break-effect:
+  enabled: true
+  view-distance: 20.0
+
+# This section is for handling the notification function in this plugin. You can remove this section to disable the feature,
+# or you set the 'enabled' option to false.
+# This feature sends a message to the dead player. Here you can inform the player about the chest and their expiration.
+# You can send the death coordination by using the placeholders: ${x} ${y}, ${z} and ${world}
+player-notification:
+  enabled: true
+  message: |-
+    &7You died. Your items were put into a chest which disappears after &c10 minutes&7! ${x} ${y} ${z}
+
+# Available Placeholders:
+# ${player_name} : shows the player name
+# ${player_displayname} : shows the player display name (Maybe with prefix)
+# ${x}, ${y}, ${z}, ${world} : shows the coordinates of the death location
+global-notification:
+  enabled: false
+  message: |-
+    &7${player_name} died at ${x} ${y} ${z} in ${world}
+
+# Available Placeholders:
+# ${player_name} : shows the player name
+# ${player_displayname} : shows the player display name (Maybe with prefix)
+# ${x}, ${y}, ${z}, ${world} : shows the coordinates of the death location
+# To disable the death message change "enabled" to true and remove the message option.
+change-death-message:
+  enabled: false
+  message: |-
+    &7${player_name} died at ${x} ${y} ${z} in ${world}
+
+# This section configures the activation of this plugin for specific worlds.
+world-filter:
+  # Possible values: blacklist, whitelist
+  filter: blacklist
+  worlds:
+    - disabled_world
+
+# Set this option to true if you want to protect the death chests against explosions.
+blast-protection: false
+
+# This option protects the death chest against thieves if the player has the specific permission and the thief
+# not the bypass permission.
+# For this option is Vault required.
+chest-protection:
+  enabled: false
+  permission: deathchest.thiefprotected
+  bypass-permission: deathchest.thiefprotected.bypass
+  # On this website you can find a list of all sounds which is implemented in SpigotMC
+  # @see https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  # If you want to disable the sound or the message, you can delete this options
+  sound: BLOCK_CHEST_LOCKED;1.0;1.0
+  message: |-
+    &cYour are not permitted to open this chest
