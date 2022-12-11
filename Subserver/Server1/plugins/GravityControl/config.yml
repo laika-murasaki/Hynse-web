@@ -38,4 +38,4 @@ regions:
   - "*"
 
 # If GravityControl should check for updates on startup
-update-checker: true
+update-checker: false
