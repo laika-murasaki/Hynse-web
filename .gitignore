@@ -66,3 +66,6 @@ Subserver/Server1/plugins/WorldEdit/.archive-unpack
 Subserver/Server1/plugins/WorldGuard/cache/profiles.sqlite
 *.sqlite
 .gitignore
+Subserver/Server1/plugins/CoreProtect/database.db
+Subserver/Server1/plugins/CoreProtect/.license
+Subserver/Server1/plugins/CoreProtect/config.yml
