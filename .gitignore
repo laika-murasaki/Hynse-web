@@ -57,3 +57,4 @@ Subserver/Server1/plugins/squaremap/locale
 Subserver/Server1/plugins/squaremap/web
 Subserver/Server1/plugins/squaremap/data
 *.back
+Subserver/Server1/plugins/GrimAC/punishments.yml
