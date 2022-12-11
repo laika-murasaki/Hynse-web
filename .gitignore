@@ -63,3 +63,6 @@ Proxy/plugins/Geyser-Velocity/locales/en_us.hash
 *.pem
 Subserver/Server1/plugins/DeathChest/saved-chests.yml
 Subserver/Server1/plugins/WorldEdit/.archive-unpack
+Subserver/Server1/plugins/WorldGuard/cache/profiles.sqlite
+*.sqlite
+.gitignore
