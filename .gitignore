@@ -60,3 +60,4 @@ Subserver/Server1/plugins/squaremap/data
 Subserver/Server1/plugins/GrimAC/punishments.yml
 Proxy/plugins/floodgate/key.pem
 Proxy/plugins/Geyser-Velocity/locales/en_us.hash
+*.pem
