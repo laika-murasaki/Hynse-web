@@ -109,6 +109,8 @@ filters:
       - "ab"
       - "auto(broadcast)?(maticbroadcast)?"
       - "voicechat"
+      - "deathcoordinates"
+      - "dc"
 
 # No touchy
 config version: 4.0
