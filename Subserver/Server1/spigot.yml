@@ -149,7 +149,7 @@ world-settings:
     thunder-chance: 100000
     hanging-tick-frequency: 100
     zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: true
+    nerf-spawner-mobs: false
     wither-spawn-sound-radius: 0
     end-portal-sound-radius: 0
     verbose: false
