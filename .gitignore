@@ -61,3 +61,4 @@ Subserver/Server1/plugins/GrimAC/punishments.yml
 Proxy/plugins/floodgate/key.pem
 Proxy/plugins/Geyser-Velocity/locales/en_us.hash
 *.pem
+Subserver/Server1/plugins/DeathChest/saved-chests.yml

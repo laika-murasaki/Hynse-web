@@ -7,11 +7,11 @@
 config-version: 2
 
 # I recommend leaving this on true to receive notification when I have performance improvements.
-update-checker: true
+update-checker: false
 duration-format: 'mm:ss'
 # The expiration of the chest in seconds.
 # You can deactivate the expiration by setting the value to -1
-expiration: 600
+expiration: 1800
 
 # Here you can modify the inventory which opens when you right-click the death chest. You can use color codes with '&'
 # in the title and change the inventory size by changing the size value.
@@ -26,7 +26,7 @@ inventory:
 # or you set the 'enabled' option to false
 # This feature is only available if you have a supported hologram plugin installed.
 hologram:
-  enabled: true
+  enabled: false
   # If you add lines you have to increase this value. This values depends on the hologram
   # plugin and the distance between the plugin
   height: 2.3
@@ -60,7 +60,7 @@ break-effect:
 # This feature sends a message to the dead player. Here you can inform the player about the chest and their expiration.
 # You can send the death coordination by using the placeholders: ${x} ${y}, ${z} and ${world}
 player-notification:
-  enabled: true
+  enabled: false
   message: |-
     &7You died. Your items were put into a chest which disappears after &c10 minutes&7! ${x} ${y} ${z}
 
@@ -91,13 +91,13 @@ world-filter:
     - disabled_world
 
 # Set this option to true if you want to protect the death chests against explosions.
-blast-protection: false
+blast-protection: true
 
 # This option protects the death chest against thieves if the player has the specific permission and the thief
 # not the bypass permission.
 # For this option is Vault required.
 chest-protection:
-  enabled: false
+  enabled: true
   permission: deathchest.thiefprotected
   bypass-permission: deathchest.thiefprotected.bypass
   # On this website you can find a list of all sounds which is implemented in SpigotMC
