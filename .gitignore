@@ -77,3 +77,11 @@ Subserver/Server1/plugins/DiscordSRV/config.yml
 Subserver/Server1/plugins/DiscordSRV/linkedaccounts.json
 Subserver/Creative/eula.txt
 Subserver/Creative/config/FabricProxy-Lite.toml
+Subserver/Creative/world/session.lock
+Subserver/Creative/world/entities
+Subserver/Creative/world/level.dat
+Subserver/Creative/world/poi
+Subserver/Creative/world/region
+Subserver/Creative/banned-ips.json
+Subserver/Creative/banned-players.json
+Subserver/Creative/usercache.json
