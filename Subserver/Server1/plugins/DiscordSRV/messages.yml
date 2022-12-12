@@ -45,10 +45,10 @@
 #
 # NOTE: The %reply% placeholder needs to be present in the format if you want the DiscordToMinecraftMessageReplyFormat to display in your message.
 #
-DiscordToMinecraftChatMessageFormat: "[<aqua>Discord</aqua> | %toprolecolor%%toprolealias%<reset>] %name%%reply% » %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "[<aqua>Discord</aqua>] %name%%reply% » %message%"
+DiscordToMinecraftChatMessageFormat: "<%name%%reply%> %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "<%name%%reply%> %message%"
 DiscordToMinecraftAllRolesSeparator: " | "
-DiscordToMinecraftMessageReplyFormat: " (replying to %name%)"
+DiscordToMinecraftMessageReplyFormat: " &7(replying to %name%)&r"
 
 # Minecraft -> Discord message
 #
@@ -78,8 +78,8 @@ DiscordToMinecraftMessageReplyFormat: " (replying to %name%)"
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
+MinecraftChatToDiscordMessageFormat: "<%displayname%> %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "<displayname%> %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
@@ -166,8 +166,8 @@ DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried runni
 #   PlaceholderAPI placeholders are also supported
 # DiscordChatChannelListCommandAllPlayersSeparator: the separator used in between players
 #
-DiscordChatChannelListCommandFormatOnlinePlayers: "**Online players (%playercount%):**"
-DiscordChatChannelListCommandFormatNoOnlinePlayers: "**No online players**"
+DiscordChatChannelListCommandFormatOnlinePlayers: ""
+DiscordChatChannelListCommandFormatNoOnlinePlayers: ""
 DiscordChatChannelListCommandPlayerFormat: "%displayname%"
 DiscordChatChannelListCommandAllPlayersSeparator: ", "
 
@@ -194,7 +194,7 @@ DiscordChatChannelListCommandAllPlayersSeparator: ", "
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerJoinMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
@@ -223,7 +223,7 @@ MinecraftPlayerJoinMessage:
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerFirstJoinMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
@@ -252,7 +252,7 @@ MinecraftPlayerFirstJoinMessage:
 # %message%:        leave message as seen in-game
 #
 MinecraftPlayerLeaveMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
@@ -282,7 +282,7 @@ MinecraftPlayerLeaveMessage:
 # %world%:        the name of the world the user died in
 #
 MinecraftPlayerDeathMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
@@ -312,7 +312,7 @@ MinecraftPlayerDeathMessage:
 # %world%:       the name of the world the user is in
 #
 MinecraftPlayerAchievementMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
@@ -363,11 +363,11 @@ MinecraftPlayerAchievementMessage:
 # %tps%:           average TPS of the server
 # PlaceholderAPI placeholders are also supported
 #
-ChannelTopicUpdaterChatChannelTopicFormat: "%playercount%/%playermax% players online | %totalplayers% unique players ever joined | Server online for %uptimemins% minutes | Last update: %date%"
-ChannelTopicUpdaterConsoleChannelTopicFormat: "TPS: %tps% | Mem: %usedmemorygb%GB used/%freememorygb%GB free/%maxmemorygb%GB max | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicFormat: ""
+ChannelTopicUpdaterConsoleChannelTopicFormat: ""
 # AtServerShutdownFormats ONLY supports %totalplayers%, %serverversion%, & %date% / %time%
-ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "Server is offline | %totalplayers% unique players ever joined"
-ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Server is offline | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: ""
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: ""
 
 # Discord command message
 # This is the message sent to players when they run "/discord". It's recommended to leave command syntax as a part of this
@@ -385,8 +385,8 @@ UnknownCommandMessage: "&bThat command doesn't exist!"
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ":white_check_mark: **Server has started**"
-DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped**"
+DiscordChatChannelServerStartupMessage: ""
+DiscordChatChannelServerShutdownMessage: ""
 
 # Server watchdog message
 #
@@ -401,7 +401,7 @@ DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped*
 #                        you can use ServerWatchdogTimeout as a placeholder by using %timeout%
 #                        you can use the %timestamp% placeholder for use in discord's timestamp format
 #
-ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked in %timeout% seconds :fire::bangbang:"
+ServerWatchdogMessage: ""
 
 # Account link messages
 # These are messages used when accounts are linked
