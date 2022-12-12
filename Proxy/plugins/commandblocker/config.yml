@@ -95,7 +95,6 @@ filters:
       - "protocolize"
       - "repreload"
       - "reputation"
-      - "server"
       - "spark"
       - "tabtps"
       - "tm"
@@ -111,6 +110,13 @@ filters:
       - "voicechat"
       - "deathcoordinates"
       - "dc"
+      - "co"
+      - "discord(srv)?"
+      - "floodgate"
+      - "fwhitelist"
+      - "geyser"
+      - "linkaccount"
+      - "unlinkaccount"
 
 # No touchy
 config version: 4.0
