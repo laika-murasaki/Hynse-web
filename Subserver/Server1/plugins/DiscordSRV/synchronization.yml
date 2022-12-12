@@ -13,7 +13,7 @@
 #                             example: 4988
 # PlaceholderAPI placeholders are supported for the values
 #
-NicknameSynchronizationEnabled: false
+NicknameSynchronizationEnabled: true
 NicknameSynchronizationCycleTime: 3
 NicknameSynchronizationFormat: "%displayname%"
 
@@ -34,7 +34,7 @@ NicknameSynchronizationFormat: "%displayname%"
 # GroupRoleSynchronizationCycleCompletely: whether synchronizations running on a timer should synchronize every member in the bots Discord servers
 #
 GroupRoleSynchronizationGroupsAndRolesToSync: {"trusted": "000000000000000000", "vip": "000000000000000000"}
-GroupRoleSynchronizationMinecraftIsAuthoritative: true
+GroupRoleSynchronizationMinecraftIsAuthoritative: false
 GroupRoleSynchronizationOneWay: false
 GroupRoleSynchronizationEnableDenyPermission: false
 GroupRoleSynchronizationPrimaryGroupOnly: false
