@@ -571,7 +571,7 @@ world-settings:
           damage: 2.0
         attributes:
           max_health: 10.0
-        disable-treasure-searching: false
+        disable-treasure-searching: true
         takes-damage-from-water: false
         naturally-aggressive-to-players-chance: 0.0
         always-drop-exp: false

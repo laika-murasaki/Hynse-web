@@ -70,3 +70,6 @@ Subserver/Server1/plugins/CoreProtect/database.db
 Subserver/Server1/plugins/CoreProtect/.license
 Subserver/Server1/plugins/CoreProtect/config.yml
 Subserver/Server1/world_nether/DIM-1/poi
+.gitignore
+Subserver/Server1/world_the_end/DIM1/poi
+Subserver/Server1/world_the_end/DIM1/poi
