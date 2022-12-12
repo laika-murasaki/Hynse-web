@@ -15,7 +15,7 @@
 #
 NicknameSynchronizationEnabled: true
 NicknameSynchronizationCycleTime: 3
-NicknameSynchronizationFormat: "%displayname%"
+NicknameSynchronizationFormat: "%displayname%%javascript_smallreptxt%"
 
 # Minecraft group <-> Discord role synchronization
 # Requires Vault

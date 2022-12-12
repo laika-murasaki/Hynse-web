@@ -27,5 +27,5 @@ groups:
   default:
     permission: ''
     priority: 0
-    prefix: '%javascript_smallreptxt%'
-    suffix: ''
+    prefix: ''
+    suffix: '%javascript_smallreptxt%'
