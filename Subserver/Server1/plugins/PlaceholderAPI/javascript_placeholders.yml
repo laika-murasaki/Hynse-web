@@ -24,3 +24,5 @@
 
 example:
   file: example.js
+smalltext:
+  file: smalltext.js
