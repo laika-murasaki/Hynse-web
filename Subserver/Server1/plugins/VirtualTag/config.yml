@@ -27,5 +27,5 @@ groups:
   default:
     permission: ''
     priority: 0
-    prefix: '&#edcaeb%rep_player_reputation%&r '
+    prefix: '&#b5b5b5%rep_player_reputation%&r'
     suffix: ''
