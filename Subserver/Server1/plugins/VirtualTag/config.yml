@@ -27,5 +27,5 @@ groups:
   default:
     permission: ''
     priority: 0
-    prefix: '&#b5b5b5%rep_player_reputation%&r'
+    prefix: '%javascript_smallreptxt%'
     suffix: ''
