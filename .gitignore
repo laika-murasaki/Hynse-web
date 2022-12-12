@@ -73,3 +73,4 @@ Subserver/Server1/world_nether/DIM-1/poi
 .gitignore
 Subserver/Server1/world_the_end/DIM1/poi
 Subserver/Server1/world_the_end/DIM1/poi
+Subserver/Server1/plugins/DiscordSRV/config.yml
