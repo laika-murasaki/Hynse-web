@@ -35,6 +35,8 @@ anticheat:
     lava-obscures: false
     max-block-height: 128
     replacement-blocks:
+    - air
+    - chest
     - amethyst_block
     - andesite
     - budding_amethyst
