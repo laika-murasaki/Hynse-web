@@ -1,17 +1,17 @@
 config-version: 2
 settings:
     web-directory:
-        path: D:\Light-Minecraft\site\sqmap
+        path: D:/Hynse/html/mapgame
         auto-update: true
     language-file: lang-en.yml
     debug-mode: false
     update-checker: true
-    web-address: http://localhost:8080
+    web-address: http://hynse.ga/mapgame
     ui:
         coordinates:
             enabled: true
         link:
-            enabled: true
+            enabled: false
         sidebar:
             pinned: unpinned
     render-progress-logging:
