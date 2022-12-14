@@ -3,7 +3,7 @@ settings:
     web-directory:
         path: D:/Hynse/html/mapgame
         auto-update: false
-    language-file: lang-en.yml
+    language-file: lang-th.yml
     debug-mode: false
     update-checker: true
     web-address: http://hynse.ga/mapgame
