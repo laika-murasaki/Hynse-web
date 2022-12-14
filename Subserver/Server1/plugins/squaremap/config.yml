@@ -2,7 +2,7 @@ config-version: 2
 settings:
     web-directory:
         path: D:/Hynse/html/mapgame
-        auto-update: true
+        auto-update: false
     language-file: lang-en.yml
     debug-mode: false
     update-checker: true
