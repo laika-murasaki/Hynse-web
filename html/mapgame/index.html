@@ -22,7 +22,6 @@
     <title>Minecraft Dynamic Map - LiveAtlas</title>
 
     <!-- Remove this if you are using the servers config below -->
-    <script src="./standalone/config.js"></script>
 
     <script>
         window.liveAtlasConfig = {
@@ -31,11 +30,11 @@
             // To configure multiple servers, see https://github.com/JLyne/LiveAtlas/wiki/Configuring-Multiple-Servers.
 
             // Example Squaremap internal webserver configuration
-            // servers: {
-            //   squaremap: {
-            // 	   squaremap: window.location.pathname
-            //   },
-            // },
+            servers: {
+               squaremap: {
+             	   squaremap: window.location.pathname
+               },
+             },
 
             // Example Pl3xmap internal webserver configuration
             // servers: {
