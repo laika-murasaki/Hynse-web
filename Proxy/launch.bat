@@ -3,7 +3,7 @@ title velocity 1_19_3
 
 :RESTART
 
-SET serverjar=velocity-3.1.2-SNAPSHOT-200
+SET serverjar=velocity-3.1.2-SNAPSHOT-198
 SET jdk=%LIGHT_JDK_18%/bin/java.exe
 SET mem=2048
 

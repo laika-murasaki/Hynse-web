@@ -1,0 +1,21 @@
+:root {
+    --border-radius: 0px !important;
+    --background-disabled: #c58625;
+    --background-hover: rgb(149, 116, 167);
+    --background-active: rgb(255, 255, 255);
+    --background-selected: rgb(214, 182, 231);
+}
+
+button {
+    border-top: 5px solid rgb(198,166,215);
+    border-bottom: 5px solid rgb(110,80,126);
+    box-shadow: 2px 4px 0px rgb(0 0 0 / 54%);
+    background: rgb(170,133,190);
+}
+
+.leaflet-control {
+    border-top: 5px solid rgb(198,166,215);
+    border-bottom: 5px solid rgb(110,80,126);
+    box-shadow: 2px 4px 0px rgb(0 0 0 / 54%);
+    background: rgb(170,133,190); 
+}
