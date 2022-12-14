@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="preload" href="https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrE.woff2" as="font" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -193,7 +193,7 @@
     <style>
         /* Theme colours */
         :root {
-            --background-base: #222222; /* Foreground UI elements */
+            --background-base: rgba(170, 133, 190, 0.726); /* Foreground UI elements */
             --background-dark: #121212; /* Body/Splash screen/Shadows */
             --background-light: #363636; /* Scrollbars/inputs */
             --background-error: #771616; /* Errors */
@@ -208,10 +208,10 @@
 
             --border-radius: 0.5rem;
             --border-color: #333333; /* Control borders */
-            --border-error: #cc0e0e;
-            --box-shadow: 2px 2px 0px #111111;
+            --border-error: #ff2549;
+            --box-shadow: 2px 2px 0px #11111177;
 
-            --text-base: rgba(255, 255, 255, 0.7); /* Normal text */
+            --text-base: rgb(255, 255, 255); /* Normal text */
             --text-emphasis: rgba(255, 255, 255, 0.87); /* Chat messages/:focus inputs */
             --text-subtle: rgba(255, 255, 255, 0.5); /* Skeletons/secondary text */
             --text-disabled: var(--text-subtle); /* Disabled controls */
@@ -283,16 +283,7 @@
         }
 
         body {
-            font-family: Raleway,
-            system-ui,
-            -apple-system,
-            'Segoe UI',
-            Roboto,
-            Helvetica,
-            Arial,
-            sans-serif,
-            'Apple Color Emoji',
-            'Segoe UI Emoji';
+            font-family: 'Mitr', sans-serif;
             color: var(--text-base);
             text-shadow: var(--text-shadow);
             letter-spacing: 0.02rem;
@@ -301,7 +292,7 @@
         noscript {
             color: var(--text-base);
             font-size: 1rem;
-            font-family: sans-serif;
+            font-family: 'Mitr', sans-serif;
             text-align: center;
             line-height: 1.25;
         }
@@ -344,7 +335,7 @@
         }
 
         #splash__error-message {
-            font-family: monospace;
+            font-family: 'Mitr', sans-serif;
             background-color: var(--background-error);
             padding: 1rem 1.5rem;
             border-radius: var(--border-radius);
@@ -363,6 +354,7 @@
     <script type="module" crossorigin src="./live-atlas/assets/index.a82d2095.js"></script>
     <link rel="modulepreload" href="./live-atlas/assets/vendor.d0ab50b1.js">
     <link rel="stylesheet" href="./live-atlas/assets/index.1de34b3a.css">
+    <link rel="stylesheet" href="./css/mc.css">
   </head>
   <body>
     <div id="splash">
