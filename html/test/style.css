@@ -1,0 +1,61 @@
+
+      /* Add some styles to make the page look modern */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      #server-info {
+        margin: auto;
+        width: 600px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      p {
+        margin-top: 0;
+        color: #666;
+      }
+
+      body.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 20px 0;
+      }
+      h1.dark-mode {
+        color: #87bbff;
+      }
+
+      body.dark-mode p {
+        color: #ddd;
+      }
+      button#dark-mode-toggle {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #0099ff;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button#dark-mode-toggle:hover {
+        background-color: #0077cc;
+      }

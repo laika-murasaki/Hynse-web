@@ -96,3 +96,9 @@ Subserver/Creative/world/playerdata
 Subserver/Creative/world/stats
 Subserver/Creative/world/DIM1
 html/mapgame/tiles
+html/test/request.ts
+html/test/request.js
+html/test/index.php
+Subserver/Server1/plugins/SmileyPlayerTrader/database.db
+Subserver/Server1/plugins/StackMob/entity-translation.yml
+Subserver/Server1/plugins/SmileyPlayerTrader/config.yml

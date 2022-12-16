@@ -265,6 +265,7 @@ world-settings:
       chest:
         open-with-solid-block-on-top: false
       end-crystal:
+        cramming-amount: 0
         baseless:
           explode: true
           explosion-power: 6.0
@@ -1453,7 +1454,7 @@ world-settings:
           remove-with-weakness: false
         shift-right-click-repairs-mending-points: 0
         exp-pickup-delay-ticks: 2
-        allow-void-trading: false
+        allow-void-trading: true
       projectile-offset:
         bow: 1.0
         crossbow: 1.0

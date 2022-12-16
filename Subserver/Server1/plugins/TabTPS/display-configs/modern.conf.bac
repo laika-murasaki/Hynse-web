@@ -9,7 +9,7 @@ action-bar-settings {
     modules="tps,mspt,memory,cpu,players"
     # The text used to separate modules. Accepts MiniMessage (i.e. " <gray>|</gray> ")
     separator=" | "
-    theme=default
+    theme=modern
 }
 boss-bar-settings {
     allow=true
@@ -29,7 +29,7 @@ boss-bar-settings {
     overlay="NOTCHED_12"
     # The text used to separate modules. Accepts MiniMessage (i.e. " <gray>|</gray> ")
     separator=" | "
-    theme=default
+    theme=modern
 }
 # The permission required to use this display config
 # Can be an empty string ("") to require no permission
@@ -37,9 +37,9 @@ permission=""
 tab-settings {
     allow=true
     enable-on-login=true
-    footer-modules="tps,mspt,memory"
+    footer-modules="tps,mspt,memory,cpu,players"
     header-modules=""
     # The text used to separate modules. Accepts MiniMessage (i.e. " <gray>|</gray> ")
     separator=" | "
-    theme=default
+    theme=modern
 }
