@@ -102,3 +102,12 @@ html/test/index.php
 Subserver/Server1/plugins/SmileyPlayerTrader/database.db
 Subserver/Server1/plugins/StackMob/entity-translation.yml
 Subserver/Server1/plugins/SmileyPlayerTrader/config.yml
+html/mapgame
+Subserver/Server1/plugins/InteractionVisualizer/Language_Repo
+Subserver/Server1/plugins/GrimAC/discord.yml
+Subserver/Server1/plugins/InteractionVisualizer/config.yml
+Subserver/Server1/plugins/InteractionVisualizer/database.db
+Subserver/Server1/plugins/squaremap-banners
+Subserver/Server1/plugins/squaremap-banners/icons
+Subserver/sus
+Subserver/Server1/plugins/GrimAC/discord.yml

@@ -3,7 +3,7 @@ title paper 1_19_3
 
 :RESTART
 
-SET serverjar=purpur-1.19.3-1870
+SET serverjar=purpur-1.19.3-1872
 SET jdk=%LIGHT_JDK_18%/bin/java.exe
 SET mem=12288
 SET port=01024

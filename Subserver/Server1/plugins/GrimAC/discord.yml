@@ -1,5 +1,5 @@
-enabled: false
-webhook: ""
+enabled: true
+webhook: "https://canary.discord.com/api/webhooks/1053349083592532011/oiQFelUCqu984Ctj7ub_WxKOBE2PMV4s6FaX51rmdZYN365HywqGAc9aVPZebHUCOKCY"
 embed-color: "#00FFFF"
 violation-content:
   - "**Player**: %player%"

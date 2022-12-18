@@ -1,8 +1,8 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "item": "minecraft:stone"
+        "item": "minecraft:bamboo_block"
     },
-    "result": "minecraft:grass_block",
+    "result": "minecraft:bamboo_stairs",
     "count": 3
 }

@@ -45,10 +45,10 @@
 #
 # NOTE: The %reply% placeholder needs to be present in the format if you want the DiscordToMinecraftMessageReplyFormat to display in your message.
 #
-DiscordToMinecraftChatMessageFormat: "<%name%%reply%> %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "<%name%%reply%> %message%"
+DiscordToMinecraftChatMessageFormat: "&#879cc9%name%%reply%&7:&r %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "&#879cc9%name%%reply%&7:&r %message%"
 DiscordToMinecraftAllRolesSeparator: " | "
-DiscordToMinecraftMessageReplyFormat: " &7(replying to %name%)&r"
+DiscordToMinecraftMessageReplyFormat: " &7(ตอบ %name%)&r"
 
 # Minecraft -> Discord message
 #
@@ -78,8 +78,8 @@ DiscordToMinecraftMessageReplyFormat: " &7(replying to %name%)&r"
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "<%displayname%> %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "<displayname%> %message%"
+MinecraftChatToDiscordMessageFormat: ":ingame: **%displayname%**: %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: ":ingame: **%displayname%**: %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
@@ -194,14 +194,14 @@ DiscordChatChannelListCommandAllPlayersSeparator: ", "
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerJoinMessage:
-  Enabled: false
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: ""
+  Content: " > :player_join_wobg: %username% เข้าร่วมเซิร์ฟเวอร์"
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#00ff00"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -223,14 +223,14 @@ MinecraftPlayerJoinMessage:
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerFirstJoinMessage:
-  Enabled: false
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: ""
+  Content: " > :new_member: %username% เข้าร่วมเซิร์ฟเวอร์เป็นครั้งแรก"
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -252,14 +252,14 @@ MinecraftPlayerFirstJoinMessage:
 # %message%:        leave message as seen in-game
 #
 MinecraftPlayerLeaveMessage:
-  Enabled: false
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: ""
+  Content: "> :player_leave_wobg: %username% ออกจากเซิร์ฟเวอร์"
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#ff0000"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -282,14 +282,14 @@ MinecraftPlayerLeaveMessage:
 # %world%:        the name of the world the user died in
 #
 MinecraftPlayerDeathMessage:
-  Enabled: false
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: ""
+  Content: " > :player_dead: %username% ตายที่ `%deathcoordinates_world%` ||`X(%deathcoordinates_coord_x%)` `Y(%deathcoordinates_coord_y%)` `Z(%deathcoordinates_coord_z%)`||"
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#000000"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -312,14 +312,14 @@ MinecraftPlayerDeathMessage:
 # %world%:       the name of the world the user is in
 #
 MinecraftPlayerAchievementMessage:
-  Enabled: false
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: ""
+  Content: " > :player_goal: %username% ได้ทำความก้าวหน้า ```​​%achievement%```"
   Embed:
-    Enabled: true
+    Enabled: false
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -385,8 +385,8 @@ UnknownCommandMessage: "&bThat command doesn't exist!"
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ""
-DiscordChatChannelServerShutdownMessage: ""
+DiscordChatChannelServerStartupMessage: ":server_open: <@&1052438223315550268> ```เซิร์ฟเวอร์เปิด```"
+DiscordChatChannelServerShutdownMessage: ":server_shutdown: <@&1052438223315550268> ```เซิร์ฟเวอร์ปิด```"
 
 # Server watchdog message
 #
@@ -427,12 +427,12 @@ ServerWatchdogMessage: ""
 #
 # Discord
 CodeGenerated: "รหัสยืนยัน : %code%"
-UnknownCode: "ไม่เจอรหัส"
-InvalidCode: "แน่ใจไหมว่าเป็นตัวเลข 4 หลัก **ไปอ่าน <#1035907891833622638> ใหม่**"
-DiscordAccountLinked: "สำเสร็จแล้ว %name% (%uuid%)"
-DiscordAccountAlreadyLinked: "ยืนยันไปแล้ว %username% (%uuid%)"
+UnknownCode: " > <:player_wrong:1053552146647363645> ไม่เจอรหัส"
+InvalidCode: " > <:player_wrong:1053552146647363645> แน่ใจไหมว่าเป็นตัวเลข 4 หลัก **ไปอ่าน https://hynse.ga/join/ ใหม่**"
+DiscordAccountLinked: " > <:player_verify:1053551608543334410> สำเสร็จแล้ว ```%name% (%uuid%)```"
+DiscordAccountAlreadyLinked: " > <:player_wrong:1053552146647363645> ยืนยันไปแล้ว ```%username% (%uuid%)```"
 DiscordLinkedAccountRequired: "You attempted to say the following message to the game chat but this server requires that you have your Minecraft account linked to your Discord account. Link it in-game by typing `/discord link`. \n```%message%```"
-DiscordLinkedAccountCheckFailed: "ไม่สามารถยืนยันได้ลองอีกครั้ง"
+DiscordLinkedAccountCheckFailed: " > <:player_wrong:1053552146647363645> ไม่สามารถยืนยันได้ลองอีกครั้ง"
 # Minecraft
 ClickToCopyCode: "คลิกเพื่อคัดลอก"
 MinecraftAccountLinked: "&bยืนยันแล้ว %username% (%id%)"

@@ -35,13 +35,13 @@ world-settings:
             markers:
                 world-border:
                     enabled: true
-                    show-controls: true
+                    show-controls: false
                     default-hidden: false
                     layer-priority: 1
                     z-index: 1
                 spawn-icon:
                     enabled: true
-                    show-controls: true
+                    show-controls: false
                     default-hidden: false
                     layer-priority: 0
                     z-index: 0
@@ -76,10 +76,10 @@ world-settings:
             lava:
                 checkerboard: true
         player-tracker:
-            enabled: false
+            enabled: true
             update-interval-seconds: 1
-            show-controls: true
-            default-hidden: false
+            show-controls: false
+            default-hidden: true
             layer-priority: 2
             z-index: 2
             nameplate:
@@ -91,4 +91,16 @@ world-settings:
             hide:
                 invisible: true
                 spectators: true
-            use-display-names: false
+            use-display-names: true
+    minecraft:overworld:
+        map:
+            display-name: โลก
+            order: 1
+    minecraft:the_nether:
+        map:
+            display-name: นรก
+            order: 2
+    minecraft:the_end:
+        map:
+            display-name: ดิเอนด์
+            order: 3

@@ -22,9 +22,11 @@
 # 'my_placeholder':
 #   file: 'my_placeholder.js'
 
-example:
-  file: example.js
+check_voice:
+  file: check_voice.js
 smalltext:
   file: smalltext.js
 smallreptxt:
   file: smallreptxt.js
+example:
+  file: example.js

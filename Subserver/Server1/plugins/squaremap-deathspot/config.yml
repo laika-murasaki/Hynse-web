@@ -1,0 +1,12 @@
+settings:
+    debug-mode: false
+world-settings:
+    default:
+        enabled: true
+        update-interval: 5
+        controls:
+            enabled: true
+            hidden-by-default: false
+        marker:
+            tooltip: '{name}''s<br/>Death Spot'
+            remove-after: 300

@@ -11,7 +11,7 @@ update-checker: false
 duration-format: 'mm:ss'
 # The expiration of the chest in seconds.
 # You can deactivate the expiration by setting the value to -1
-expiration: 1800
+expiration: 3600
 
 # Here you can modify the inventory which opens when you right-click the death chest. You can use color codes with '&'
 # in the title and change the inventory size by changing the size value.
@@ -20,7 +20,7 @@ inventory:
   # Possible values are: constant and flexible
   # constant: the size of the inventory is always 45 slots large
   # flexible: the size of the inventory depends on the items which had the player in the inventory.
-  size: flexible
+  size: constant
 
 # This section is for handling the hologram function in this plugin. You can remove this section to disable the feature,
 # or you set the 'enabled' option to false

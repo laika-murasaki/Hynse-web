@@ -117,6 +117,9 @@ filters:
       - "geyser"
       - "linkaccount"
       - "unlinkaccount"
+      - "squaremap"
+      - "viewdistance"
+      - "emoteschat"
 
 # No touchy
 config version: 4.0

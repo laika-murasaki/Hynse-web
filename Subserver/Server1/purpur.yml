@@ -33,7 +33,7 @@ settings:
   fix-projectile-looting-transfer: false
   disable-give-dropping: false
   use-alternate-keepalive: true
-  server-mod-name: Hynse
+  server-mod-name: vanilla
   tps-catchup: true
   seed:
     structure:

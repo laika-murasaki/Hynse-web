@@ -8,9 +8,8 @@ BlockThatDisables: 'EMERALD_BLOCK'
 # See https://minecraft.fandom.com/wiki/Daylight_cycle for more info
 RestockTimes:
   time1: 1000
-  time4: 7000
-  time3: 13000
-  time4: 20000
+  time2: 13000
+
 
 # This time is in seconds. This cooldown for renaming is to prevent possible abuse
 # of people repeatedly disabling ai and re-enabling it to get double trades. I would keep this
@@ -29,7 +28,7 @@ toggleableoptions:
   userenaming: true
 
   # This will allow a block to disable and renable the Villager AI.
-  useblocks: false
+  useblocks: true
 
 messages:
   no-permission: "&cYou don't have permission to use this command."

@@ -24,3 +24,9 @@ expansions:
     github_script_downloads: false
     argument_split: ','
     use_quick_js: false
+  server:
+    tps_color:
+      high: '&a'
+      low: '&c'
+      medium: '&e'
+    server_name: A Minecraft Server

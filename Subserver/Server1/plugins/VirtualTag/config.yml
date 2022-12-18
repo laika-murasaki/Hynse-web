@@ -28,4 +28,4 @@ groups:
     permission: ''
     priority: 0
     prefix: ''
-    suffix: '%javascript_smallreptxt%'
+    suffix: '&7%javascript_smallreptxt%'

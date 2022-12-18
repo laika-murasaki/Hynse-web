@@ -87,6 +87,8 @@ velocity-servers:
   default: 393
   fabric: 761
   server1: 761
+  sus: 761
+  laikatestworld: 761
 #
 #----------------------------------------------------------#
 #                  GLOBAL PACKET LIMITER                   #
