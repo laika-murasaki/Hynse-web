@@ -385,8 +385,8 @@ UnknownCommandMessage: "&bThat command doesn't exist!"
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ":server_open: <@&1052438223315550268> ```เซิร์ฟเวอร์เปิด```"
-DiscordChatChannelServerShutdownMessage: ":server_shutdown: <@&1052438223315550268> ```เซิร์ฟเวอร์ปิด```"
+DiscordChatChannelServerStartupMessage: ":server_open: **เซิร์ฟเวอร์เปิด**"
+DiscordChatChannelServerShutdownMessage: ":server_shutdown: **เซิร์ฟเวอร์ปิด**"
 
 # Server watchdog message
 #

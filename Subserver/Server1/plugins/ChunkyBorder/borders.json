@@ -3,9 +3,9 @@
     "world": "world",
     "centerX": 0.0,
     "centerZ": 0.0,
-    "radiusX": 30000.0,
-    "radiusZ": 30000.0,
-    "shape": "circle",
+    "radiusX": 3333.0,
+    "radiusZ": 3333.0,
+    "shape": "square",
     "wrap": "none"
   }
 }

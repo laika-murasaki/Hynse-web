@@ -4,23 +4,23 @@
 version: 1
 border-options:
   check-interval: 20
-  message: '&cYou have reached the edge of this world.'
+  message: '&cคุณต้องมี Purpur Pass'
   use-action-bar: true
   effect: ender_signal
   sound: entity_enderman_teleport
   prevent-mob-spawns: false
   prevent-enderpearl: false
   prevent-chorus-fruit: false
-  visualizer-enabled: false
+  visualizer-enabled: true
   visualizer-range: 8
-  visualizer-color: 20A0FF
+  visualizer-color: b651db
 map-options:
   enable:
-    bluemap: true
-    dynmap: true
+    bluemap: false
+    dynmap: false
     squaremap: true
   label: World Border
   hide-by-default: false
-  color: FF0000
-  weight: 3
+  color: b651db
+  weight: 1
   priority: 0
