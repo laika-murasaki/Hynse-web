@@ -123,3 +123,4 @@ Subserver/Server1/plugins/InteractiveChatDiscordSrvAddon/hashes.json
 Subserver/Server1/plugins/InteractiveChatDiscordSrvAddon/built-in/Default
 Subserver/Server1/plugins/InteractiveChat/storage.yml
 Subserver/Server1/plugins/InteractiveChatDiscordSrvAddon/cache/data.dat
+Subserver/Server1/plugins/InteractiveChat/database.db
