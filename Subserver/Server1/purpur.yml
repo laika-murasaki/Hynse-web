@@ -1146,7 +1146,7 @@ world-settings:
       piston:
         block-push-limit: 12
       end_portal:
-        safe-teleporting: false
+        safe-teleporting: true
       powder_snow:
         bypass-mob-griefing: false
       farmland:

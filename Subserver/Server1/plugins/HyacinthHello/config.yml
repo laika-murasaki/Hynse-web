@@ -1,0 +1,5 @@
+enabled: true
+prefix: §dHyacinthHello §8»§r
+hello-wrapper-left: '§6»§e '
+hello-wrapper-right: ' §6«'
+maximum-message-length: 60
