@@ -28,5 +28,9 @@ smalltext:
   file: smalltext.js
 smallreptxt:
   file: smallreptxt.js
+join:
+  file: joinsupport.js
+leavce:
+  file: leavesupport.js
 example:
   file: example.js

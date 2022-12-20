@@ -110,7 +110,6 @@ filters:
       - "voicechat"
       - "deathcoordinates"
       - "dc"
-      - "co"
       - "discord(srv)?"
       - "floodgate"
       - "fwhitelist"
@@ -120,6 +119,14 @@ filters:
       - "squaremap"
       - "viewdistance"
       - "emoteschat"
+      - "f3r(eload)?"
+      - "ic"
+      - "icd"
+      - "interactivechat(discordsrv)?"
+      - "joinmessage"
+      - "leavemessage"
+      - "quitmessage"
+      - "quitmsg"
 
 # No touchy
 config version: 4.0
