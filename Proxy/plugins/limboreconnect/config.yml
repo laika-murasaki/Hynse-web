@@ -1,0 +1,10 @@
+# Send player to the limbo, if disconnect reason contains this text (using regex)
+restart-message: "/((?i)^(server closed|server is restarting))+$/gm"
+# Server status check interval in milliseconds
+check-interval: 1000
+# Server status check timeout in milliseconds
+ping-timeout: 500
+
+messages:
+  server-offline: "<red>Server is restarting, please wait..."
+  connecting: "<aqua>Connecting to the server..."

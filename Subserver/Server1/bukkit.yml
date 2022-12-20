@@ -1,6 +1,6 @@
 settings:
   allow-end: true
-  warn-on-overload: false
+  warn-on-overload: true
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: false
@@ -11,18 +11,18 @@ settings:
   minimum-api: none
   use-map-color-cache: true
 spawn-limits:
-  monsters: 42
-  animals: 5
-  water-animals: 2
-  water-ambient: 2
-  water-underground-creature: 3
-  axolotls: 3
+  monsters: 70
+  animals: 10
+  water-animals: 5
+  water-ambient: 20
+  water-underground-creature: 5
+  axolotls: 5
   ambient: 1
 chunk-gc:
   period-in-ticks: 600
 ticks-per:
   animal-spawns: 400
-  monster-spawns: 10
+  monster-spawns: 1
   water-spawns: 400
   water-ambient-spawns: 400
   water-underground-creature-spawns: 400
