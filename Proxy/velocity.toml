@@ -45,11 +45,11 @@ forwarding-secret-file = "forwarding.secret"
 # 
 # If your network runs one modpack consistently, consider using ping-passthrough = "mods"
 # instead for a nicer display in the server list.
-announce-forge = false
+announce-forge = true
 
 # If enabled (default is false) and the proxy is in online mode, Velocity will kick
 # any existing player who is online if a duplicate connection attempt is made.
-kick-existing-players = false
+kick-existing-players = true
 
 # Should Velocity pass server list ping requests to a backend server?
 # Available options:
@@ -64,7 +64,7 @@ kick-existing-players = false
 #                  description and mod list.
 # - "all":         Uses the backend server's response as the proxy response. The Velocity
 #                  configuration is used if no servers could be contacted.
-ping-passthrough = "DISABLED"
+ping-passthrough = "mods"
 
 # If not enabled (default is true) player IP addresses will be replaced by <ip address withheld> in logs
 enable-player-address-logging = true
@@ -72,17 +72,17 @@ enable-player-address-logging = true
 [servers]
 # Configure your servers here. Each key represents the server's name, and the value
 # represents the IP address of the server to connect to.
-server1 = "127.0.0.1:01024"
-laikatestworld = "127.0.0.1:01025"
+survival = "127.0.0.1:40001"
+test = "127.0.0.1:40002"
 # In what order we should try servers when a player logs in or is kicked from a server.
 try = [
-  "server1"
+  "survival"
 ]
 
 [forced-hosts]
 # Configure your forced hosts here.
-"server1.example.com" = [
-  "server1"
+"survival.example.com" = [
+  "survival"
 ]
 
 [advanced]

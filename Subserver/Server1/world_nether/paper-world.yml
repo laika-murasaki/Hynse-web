@@ -24,12 +24,36 @@ anticheat:
     - soul_sand
     - soul_soil
 entities:
-  spawning:
-    spawn-limits:
-      ambient: -1
-      axolotls: -1
-      creature: -1
-      monster: 24
-      underground_water_creature: -1
-      water_ambient: -1
-      water_creature: -1
+  despawn-ranges:
+    ambient:
+      hard: 56
+      soft: 30
+    axolotls:
+      hard: 56
+      soft: 30
+    creature:
+      hard: 56
+      soft: 30
+    misc:
+      hard: 56
+      soft: 30
+    monster:
+      hard: 56
+      soft: 30
+    underground_water_creature:
+      hard: 56
+      soft: 30
+    water_ambient:
+      hard: 56
+      soft: 30
+    water_creature:
+      hard: 56
+      soft: 30
+  spawn-limits:
+    ambient: 1
+    axolotls: -1
+    creature: 5
+    monster: 42
+    underground_water_creature: -1
+    water_ambient: -1
+    water_creature: -1

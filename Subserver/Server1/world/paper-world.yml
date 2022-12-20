@@ -4,3 +4,37 @@
 # World: world (minecraft:overworld)
 
 _version: 29
+entities:
+  despawn-ranges:
+    ambient:
+      hard: 56
+      soft: 30
+    axolotls:
+      hard: 56
+      soft: 30
+    creature:
+      hard: 56
+      soft: 30
+    misc:
+      hard: 56
+      soft: 30
+    monster:
+      hard: 128
+      soft: 32
+    underground_water_creature:
+      hard: 56
+      soft: 30
+    water_ambient:
+      hard: 56
+      soft: 30
+    water_creature:
+      hard: 56
+      soft: 30
+  spawn-limits:
+    ambient: 1
+    axolotls: 3
+    creature: 10
+    monster: 70
+    underground_water_creature: 3
+    water_ambient: 2
+    water_creature: 2
