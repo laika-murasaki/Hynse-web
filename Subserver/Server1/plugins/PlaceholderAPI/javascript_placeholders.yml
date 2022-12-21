@@ -32,5 +32,7 @@ join:
   file: joinsupport.js
 leavce:
   file: leavesupport.js
+repcheckperm:
+  file: repcheckperm.js
 example:
   file: example.js
