@@ -44,9 +44,9 @@ default actions:
 # All terminal actions: DENY, ALLOW
 # All intermediate actions: SOFT_DENY, SOFT_ALLOW, NONE
 
-root filter permission: "light.protect.cmd"
+root filter permission: "tau.cmdblock.filter"
 # this permission is the base permission appended before the filters name
-# so filter "foo" would become "tau.cmdblock.filter.foo"
+# so filter "foo" would become "light.protect.cmd.filter.survival"
 
 permission cache millis: 100
 # the amount of time in milliseconds we should cache the responses of the permission plugin
@@ -60,9 +60,9 @@ filters:
     #pattern suffix: "($| .*)"
     # filter specific suffix
     
-    #type: blacklist
+    type: restrictedblacklist
     # what type should this filter be?
-    #priority: 10
+    priority: 1
     # priority of the filter, higher is handled first
     
     #allow action: soft_allow
@@ -127,9 +127,6 @@ filters:
       - "leavemessage"
       - "quitmessage"
       - "quitmsg"
-      - "eglow"
-      - "joinmsg"
-      - "leavemsg"
       - "tab"
   survivalsupporter:
     #pattern prefix: "(?i)^\\/"
@@ -137,9 +134,9 @@ filters:
     #pattern suffix: "($| .*)"
     # filter specific suffix
     
-    #type: blacklist
+    type: restrictedwhitelist
     # what type should this filter be?
-    #priority: 10
+    priority: 10
     # priority of the filter, higher is handled first
     
     #allow action: soft_allow
@@ -150,60 +147,8 @@ filters:
     #message: "&cFilter specific deny message."
     patterns:
       # blocks /?
-      - "\\?.*"
-      - "\\S*:.*"
-      - "pl(ugins)?"
-      - "icanhasbukkit"
-      - "ver(sion)?"
-      - "about"
-      - "paper"
-      - "afk(plus)?"
-      - "anarchystats"
-      - "avl(optimize)?(reload)?"
-      - "fcc"
-      - "fabric-command-api-v2:client"
-      - "help"
-      - "lp(v)?"
-      - "luckperms(velocity)?"
-      - "me"
-      - "papi"
-      - "perm(ission)?(issions)?(s)?"
-      - "placeholderapi"
-      - "protocolize"
-      - "repreload"
-      - "reputation"
-      - "spark"
-      - "tabtps"
-      - "tm"
-      - "tps"
-      - "trigger"
-      - "velocity"
-      - "virtualtag"
-      - "vt"
-      - "vtag"
-      - "zoomify"
-      - "ab"
-      - "auto(broadcast)?(maticbroadcast)?"
-      - "voicechat"
-      - "deathcoordinates"
-      - "dc"
-      - "discord(srv)?"
-      - "floodgate"
-      - "fwhitelist"
-      - "geyser"
-      - "linkaccount"
-      - "unlinkaccount"
-      - "squaremap"
-      - "viewdistance"
-      - "emoteschat"
-      - "f3r(eload)?"
-      - "ic"
-      - "icd"
-      - "interactivechat(discordsrv)?"
-      - "joinmessage"
-      - "leavemessage"
-      - "quitmessage"
-      - "quitmsg"
-      - "tab"
+      - "eglow"
+      - "joinmsg"
+      - "leavemsg"
 # No touchy
 config version: 4.0
