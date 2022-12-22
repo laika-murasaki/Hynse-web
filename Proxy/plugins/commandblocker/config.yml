@@ -127,6 +127,10 @@ filters:
       - "leavemessage"
       - "quitmessage"
       - "quitmsg"
+      - "eglow"
+      - "joinmsg"
+      - "leavemsg"
+      - "tab"
 
 # No touchy
 config version: 4.0
