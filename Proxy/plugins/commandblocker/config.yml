@@ -131,6 +131,79 @@ filters:
       - "joinmsg"
       - "leavemsg"
       - "tab"
-
+  survivalsupporter:
+    #pattern prefix: "(?i)^\\/"
+    # filter specific prefix
+    #pattern suffix: "($| .*)"
+    # filter specific suffix
+    
+    #type: blacklist
+    # what type should this filter be?
+    #priority: 10
+    # priority of the filter, higher is handled first
+    
+    #allow action: soft_allow
+    #deny action: soft_deny
+    # the actions of this filter
+    
+    # filter specific deny message
+    #message: "&cFilter specific deny message."
+    patterns:
+      # blocks /?
+      - "\\?.*"
+      - "\\S*:.*"
+      - "pl(ugins)?"
+      - "icanhasbukkit"
+      - "ver(sion)?"
+      - "about"
+      - "paper"
+      - "afk(plus)?"
+      - "anarchystats"
+      - "avl(optimize)?(reload)?"
+      - "fcc"
+      - "fabric-command-api-v2:client"
+      - "help"
+      - "lp(v)?"
+      - "luckperms(velocity)?"
+      - "me"
+      - "papi"
+      - "perm(ission)?(issions)?(s)?"
+      - "placeholderapi"
+      - "protocolize"
+      - "repreload"
+      - "reputation"
+      - "spark"
+      - "tabtps"
+      - "tm"
+      - "tps"
+      - "trigger"
+      - "velocity"
+      - "virtualtag"
+      - "vt"
+      - "vtag"
+      - "zoomify"
+      - "ab"
+      - "auto(broadcast)?(maticbroadcast)?"
+      - "voicechat"
+      - "deathcoordinates"
+      - "dc"
+      - "discord(srv)?"
+      - "floodgate"
+      - "fwhitelist"
+      - "geyser"
+      - "linkaccount"
+      - "unlinkaccount"
+      - "squaremap"
+      - "viewdistance"
+      - "emoteschat"
+      - "f3r(eload)?"
+      - "ic"
+      - "icd"
+      - "interactivechat(discordsrv)?"
+      - "joinmessage"
+      - "leavemessage"
+      - "quitmessage"
+      - "quitmsg"
+      - "tab"
 # No touchy
 config version: 4.0
