@@ -126,3 +126,5 @@ Subserver/Server1/plugins/InteractiveChatDiscordSrvAddon/cache/data.dat
 Subserver/Server1/plugins/InteractiveChat/database.db
 Subserver/Server1/plugins/InteractiveChat
 Subserver/Server1/plugins/voicechat-discord/config.yml
+Subserver/Server1/plugins/eGlow/Playerdata.db
+Subserver/Server1/plugins/eGlow/Config.yml
